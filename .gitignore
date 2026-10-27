@@ -1,0 +1,19 @@
+cv/
+.venv/
+__pycache__/
+*.pyc
+
+private/
+
+# Kopie zapasowe
+*backup*.py
+*before*.py
+*_verified.py
+
+# Lokalne dane i raporty
+data/
+reports/
+
+# Local eRecruiter experiments
+erecruiter_dry_run.py
+inspect_erecruiter.py

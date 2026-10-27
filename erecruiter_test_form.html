@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>eRecruiter - Formularz TESTOWY</title>
+</head>
+<body>
+    <h1>Formularz rekrutacyjny - TEST LOKALNY</h1>
+
+    <form>
+        <label>Imię:</label>
+        <input type="text" name="firstName" required>
+
+        <label>Nazwisko:</label>
+        <input type="text" name="lastName" required>
+
+        <label>E-mail:</label>
+        <input type="email" name="email" required>
+
+        <label>Telefon:</label>
+        <input type="text" name="phone" required>
+
+        <label>Dyspozycyjność godzinowa:</label>
+        <textarea name="custom_402285" required></textarea>
+
+        <fieldset>
+            <legend>Czy posiadasz status studenta lub ucznia?</legend>
+
+            <label>
+                <input type="radio" name="custom_402286" value="1">
+                Tak - studenta
+            </label>
+
+            <label>
+                <input type="radio" name="custom_402286" value="2">
+                Tak - ucznia
+            </label>
+
+            <label>
+                <input type="radio" name="custom_402286" value="3">
+                Nie
+            </label>
+        </fieldset>
+
+        <label>Dołącz CV:</label>
+        <input type="file" accept=".pdf">
+
+        <p>Tryb testowy — brak przycisku wysyłania aplikacji.</p>
+    </form>
+</body>
+</html>

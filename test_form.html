@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Testowy formularz rekrutacyjny</title>
+</head>
+<body>
+    <h1>Formularz aplikacyjny — TEST</h1>
+
+    <form>
+        <label for="first_name">Imię:</label>
+        <input type="text" id="first_name" name="first_name">
+
+        <label for="last_name">Nazwisko:</label>
+        <input type="text" id="last_name" name="last_name">
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email">
+	<label for="phone">Numer telefonu:</label>
+        <input type="tel" id="phone" name="phone" required>
+        <label for="availability">Dyspozycyjność godzinowa:</label>
+        <textarea id="availability" name="availability" required></textarea>
+<fieldset>
+    <legend>Czy posiadasz obecnie status studenta lub ucznia?</legend>
+
+    <label>
+        <input type="radio" name="student_status" value="Tak - studenta">
+        Tak - studenta
+    </label>
+
+    <label>
+        <input type="radio" name="student_status" value="Tak - ucznia">
+        Tak - ucznia
+    </label>
+
+    <label>
+        <input type="radio" name="student_status" value="Nie">
+        Nie
+    </label>
+</fieldset>        
+<label for="cv">Dołącz CV:</label>
+        <input type="file" id="cv" name="cv" accept=".pdf">
+
+        <button type="button" onclick="document.getElementById('confirmation').textContent = 'Aplikacja testowa wysłana poprawnie'">
+            Wyślij aplikację (TEST)
+        </button>
+
+        <p id="confirmation"></p>
+    </form>
+</body>
+</html>
